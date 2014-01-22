@@ -32,13 +32,14 @@ Estructura del IBAN (International Bank Account Number) en España: ESDD EEEE OO
 Como se puede ver se añade el literal 'ES', que es el código ISO de España y a continuación otros 2 dígitos de control, que en su verión impresa se agruparán de cuatro en cuatro caracteres separados por un espacio en blanco.
 
 De momento sólo hay definidas 3 funciones:
+<PRE>
 - getDigitoD('EEEE', 'OOOO') -> int
     digito de 0 a 9
 - getDigitoC('NNNNNNNNNN') -> int
     digito de 0 a 9
 - getIBAN_ES('EEEEOOOODDNNNNNNNNNN) -> str
     cadena de texto de 24 caracteres en formato digital (sin espacios)
-
+</PRE>
 
 <B>TODO:</B>
 <OL>
