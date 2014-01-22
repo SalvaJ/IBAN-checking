@@ -2,6 +2,7 @@ IBAN-checking
 =============
 
 SPANISH:
+--------
 Módulo/Librería para obtener y validar cuentas bancarias IBAN (International Bank Account Number) de España.  La entrada en vigor en la Unión Europea del proyecto SEPA (Single Euro Payments Area, http://www.sepaesp.es/) el próximo día 1 de Febrero de 2014, hace obligatoria la utilización del nuevo número de cuenta bancaria con formato IBAN.
 
 El formato del IBAN está establecido por la norma ISO 13616-1:
@@ -22,12 +23,13 @@ Entidad/Oficina/D.C./Número de Cuenta = EEEE OOOO DD NNNNNNNNNN
 Todos son dígitos numéricos del 0 al 9.
 
 Estructura del IBAN (International Bank Account Number) en España: ESDD EEEE OOOO DDNN NNNN NNNN
-- ES= Código ISO del país, en este caso España
-- DD= Dígitos de Control de toda la CCC
-- EEEE= Código Entidad.  Asignado por el Banco de España.
-- OOOO= Código Oficina.
-- DD= Dígitos de Control, 2.
-- Como se puede ver se añade el literal 'ES', que es el código ISO de España y a continuación otros 2 dígitos de control, que en su verión impresa se agruparán de cuatro en cuatro caracteres separados por un espacio en blanco.
+* ES= Código ISO del país, en este caso España
+* DD= Dígitos de Control de toda la CCC
+* EEEE= Código Entidad.  Asignado por el Banco de España.
+* OOOO= Código Oficina.
+* DD= Dígitos de Control, 2.
+
+Como se puede ver se añade el literal 'ES', que es el código ISO de España y a continuación otros 2 dígitos de control, que en su verión impresa se agruparán de cuatro en cuatro caracteres separados por un espacio en blanco.
 
 De momento sólo hay definidas 3 funciones:
 - getDigitoD('EEEE', 'OOOO') -> int
@@ -39,16 +41,17 @@ De momento sólo hay definidas 3 funciones:
 
 
 TODO: 
-- Función que devuelva el CCC completo pasando EEEE, OOOO y NNNNNNNNN
-- Función que devuelva el IBAN completo pasando EEEE, OOOO y NNNNNNNNN
-- Función que verifique si CCC es correcto, devolviendo Booleano.
-- Función que verifique si IBAN es correcto, devolbiendo Booleano.
-- Excepciones de error?
-- Clase?
+1.  Función que devuelva el CCC completo pasando EEEE, OOOO y NNNNNNNNN
+2.  Función que devuelva el IBAN completo pasando EEEE, OOOO y NNNNNNNNN
+3.  Función que verifique si CCC es correcto, devolviendo Booleano.
+4.  Función que verifique si IBAN es correcto, devolbiendo Booleano.
+5.  Excepciones de error?
+6.  Clase?
 
 Madrid, Salvaj€, 22/01/2014
 Licencia: GPLv2 (GNU General Public License version 2)
 Código Fuente: https://github.com/SalvaJ/IBAN-checking/
 
 ENGLISH:
+--------
 Coming soon...  ;-)
