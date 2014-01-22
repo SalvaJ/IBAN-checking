@@ -12,22 +12,22 @@ A su vez, se hace uso de la norma ISO 3166-1-alpha-2 para el código de país (E
 Hasta ahora en España se venía usando el CCC establecido en el Cuaderno 37 de la AEB (Asociación Española de Banca, http://www.aebanca.es/)
 
 Estructura del CCC (Código Cuenta Cliente):
-Entidad Oficina D.C. Número de Cuenta
-EEEE    OOOO    DD   NNNNNNNNNN
-EEEE= Código Entidad.  Asignado por el Banco de España.
-OOOO= Código Oficina.
-DD= Dígitos de Control, 2: (el primero, dígito 'D', chequea los códigos de Entidad y Oficina; el segundo, dígito 'C' chequea el número de cuenta)
-NNNNNNNNNN= Numero de cuenta bancaria.
+
+Entidad/Oficina/D.C./Número de Cuenta = EEEE OOOO DD NNNNNNNNNN
+- EEEE= Código Entidad.  Asignado por el Banco de España.
+- OOOO= Código Oficina.
+- DD= Dígitos de Control, 2: (el primero, dígito 'D', chequea los códigos de Entidad y Oficina; el segundo, dígito 'C' chequea el número de cuenta)
+- NNNNNNNNNN= Numero de cuenta bancaria.
+
 Todos son dígitos numéricos del 0 al 9.
 
-Estructura del IBAN (International Bank Account Number) en España.
-ESDD EEEE OOOO DDNN NNNN NNNN
-ES= Código ISO del país, en este caso España
-DD= Dígitos de Control de toda la CCC
-EEEE= Código Entidad.  Asignado por el Banco de España.
-OOOO= Código Oficina.
-DD= Dígitos de Control, 2.
-Como se puede ver se añade el literal 'ES', que es el código ISO de España y a continuación otros 2 dígitos de control, que en su verión impresa se agruparán de cuatro en cuatro caracteres separados por un espacio en blanco.
+Estructura del IBAN (International Bank Account Number) en España: ESDD EEEE OOOO DDNN NNNN NNNN
+- ES= Código ISO del país, en este caso España
+- DD= Dígitos de Control de toda la CCC
+- EEEE= Código Entidad.  Asignado por el Banco de España.
+- OOOO= Código Oficina.
+- DD= Dígitos de Control, 2.
+- Como se puede ver se añade el literal 'ES', que es el código ISO de España y a continuación otros 2 dígitos de control, que en su verión impresa se agruparán de cuatro en cuatro caracteres separados por un espacio en blanco.
 
 De momento sólo hay definidas 3 funciones:
 - getDigitoD('EEEE', 'OOOO') -> int
