@@ -46,7 +46,9 @@ TODO:
 - Excepciones de error?
 - Clase?
 
-
+Madrid, Salvaj€, 22/01/2014
+Licencia: GPLv2 (GNU General Public License version 2)
+Código Fuente: https://github.com/SalvaJ/IBAN-checking/
 
 ENGLISH:
 Coming soon...  ;-)
