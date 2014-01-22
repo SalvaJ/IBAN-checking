@@ -9,7 +9,7 @@ lista_entidad_sucursal = [4, 8, 5, 10, 9, 7, 3, 6]
 lista_cuenta_cliente = [1, 2, 4, 8, 5, 10, 9, 7, 3, 6]
 
 
-def digitoEntidadSucursal(entidad, sucursal):
+def getDigitoD(entidad, sucursal):
     """Devuelve el dígito D de control de una sucursal bancaria dada.
     Para ello se le pasan el código de entidad y el código de sucursal,
     conforme a la normativa bancaria de España
@@ -41,7 +41,7 @@ def digitoEntidadSucursal(entidad, sucursal):
     return digito
 
 
-def digitoCuenta(numeroCuenta):
+def getDigitoC(numeroCuenta):
     """Devuelve el dígito C de control de un numero de cuenta bancaria dado.
     Para ello se le pasan el numero de cuenta normalizado de 10 dígitos,
     conforme a la normativa bancaria de España
@@ -99,8 +99,8 @@ if __name__ == '__main__':
     entradaEntidad = input('Introduce Código Entidad: ')
     entradaSucursal = input('Introduce Código Sucursal:')
     entradaCuenta = input('Introduce Número de Cuenta: ')
-    digitoD = digitoEntidadSucursal(entradaEntidad, entradaSucursal)
-    digitoC = digitoCuenta(entradaCuenta)
+    digitoD = getDigitoD(entradaEntidad, entradaSucursal)
+    digitoC = getDigitoC(entradaCuenta)
     print(digitoD, digitoC)
     numeroCCC = ''.join([entradaEntidad, entradaSucursal, str(digitoD),
                          str(digitoC), entradaCuenta])
