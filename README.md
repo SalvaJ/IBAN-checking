@@ -40,17 +40,21 @@ De momento sólo hay definidas 3 funciones:
     cadena de texto de 24 caracteres en formato digital (sin espacios)
 
 
-TODO: 
-1.  Función que devuelva el CCC completo pasando EEEE, OOOO y NNNNNNNNN
-2.  Función que devuelva el IBAN completo pasando EEEE, OOOO y NNNNNNNNN
-3.  Función que verifique si CCC es correcto, devolviendo Booleano.
-4.  Función que verifique si IBAN es correcto, devolbiendo Booleano.
-5.  Excepciones de error?
-6.  Clase?
+<B>TODO:</B>
+<OL>
+<LI>Función que devuelva el CCC completo pasando EEEE, OOOO y NNNNNNNNN
+<li>Función que devuelva el IBAN completo pasando EEEE, OOOO y NNNNNNNNN
+<li>Función que verifique si CCC es correcto, devolviendo Booleano.
+<li>Función que verifique si IBAN es correcto, devolViendo Booleano.
+<li>Excepciones de error?
+<li>Clase?
+</OL>
 
 Madrid, Salvaj€, 22/01/2014
 Licencia: GPLv2 (GNU General Public License version 2)
 Código Fuente: https://github.com/SalvaJ/IBAN-checking/
+
+
 
 ENGLISH:
 --------
