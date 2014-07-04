@@ -19,7 +19,6 @@ def getDigitoD(entidad, sucursal):
         sucursal: (str), longitud 4 caracteres numéricos de 0 a 9
     Returns:
         digito: (int), entero de 0 a 9
-
     Raises:
         nada
     Examples:
